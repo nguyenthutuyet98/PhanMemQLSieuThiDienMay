@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C9B38A5D-8FF0-4DBB-BB80-A55B64CAF0F2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QuanLySieuThiDienMay</RootNamespace>
+    <AssemblyName>QuanLySieuThiDienMay</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DTO\CTHoaDon.cs" />
+    <Compile Include="DTO\DataProvider.cs" />
+    <Compile Include="DTO\HoaDon.cs" />
+    <Compile Include="DTO\LoaiSP.cs" />
+    <Compile Include="DTO\NhanVien.cs" />
+    <Compile Include="DTO\SanPham.cs" />
+    <Compile Include="frmBaoCaoDTTheoNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBaoCaoDTTheoNhanVien.designer.cs">
+      <DependentUpon>frmBaoCaoDTTheoNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBaoCaoDTTheoThoiGian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBaoCaoDTTheoThoiGian.designer.cs">
+      <DependentUpon>frmBaoCaoDTTheoThoiGian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDangNhap.designer.cs">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBanHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBanHang.Designer.cs">
+      <DependentUpon>frmBanHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLNhanVien.designer.cs">
+      <DependentUpon>frmQLNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLSanPham.designer.cs">
+      <DependentUpon>frmQLSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThemNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemNhanVien.designer.cs">
+      <DependentUpon>frmThemNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThemSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemSanPham.designer.cs">
+      <DependentUpon>frmThemSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\ucSanPham.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucSanPham.Designer.cs">
+      <DependentUpon>ucSanPham.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmBanHang.resx">
+      <DependentUpon>frmBanHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBaoCaoDTTheoNhanVien.resx">
+      <DependentUpon>frmBaoCaoDTTheoNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBaoCaoDTTheoThoiGian.resx">
+      <DependentUpon>frmBaoCaoDTTheoThoiGian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDangNhap.resx">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLNhanVien.resx">
+      <DependentUpon>frmQLNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLSanPham.resx">
+      <DependentUpon>frmQLSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemNhanVien.resx">
+      <DependentUpon>frmThemNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemSanPham.resx">
+      <DependentUpon>frmThemSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UserControls\ucSanPham.resx">
+      <DependentUpon>ucSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="ico_img\add img.png" />
+    <Content Include="ico_img\add NV.png" />
+    <Content Include="ico_img\add SP.png" />
+    <Content Include="ico_img\banhang.png" />
+    <Content Include="ico_img\cap nhat.png" />
+    <Content Include="ico_img\congnghe.png" />
+    <Content Include="ico_img\dang nhap.ico" />
+    <Content Include="ico_img\Dang nhap.png" />
+    <Content Include="ico_img\DangXuat.png" />
+    <Content Include="ico_img\dientu.png" />
+    <Content Include="ico_img\Giadung.png" />
+    <Content Include="ico_img\GiamSoLuong.png" />
+    <Content Include="ico_img\Hoa Don.png" />
+    <Content Include="ico_img\ico Add NV.ico" />
+    <Content Include="ico_img\ico Add SP.ico" />
+    <Content Include="ico_img\icon xem.png" />
+    <Content Include="ico_img\khac1.png" />
+    <Content Include="ico_img\Main %282%29.ico" />
+    <Content Include="ico_img\nam.png" />
+    <Content Include="ico_img\nhan vien.ico" />
+    <Content Include="ico_img\NhanVien.png" />
+    <Content Include="ico_img\nu.png" />
+    <Content Include="ico_img\QuanLy.png" />
+    <Content Include="ico_img\SP.png" />
+    <Content Include="ico_img\TangSoLuong.png" />
+    <Content Include="ico_img\tatca.png" />
+    <Content Include="ico_img\tg.ico" />
+    <Content Include="ico_img\Thoi gian.png" />
+    <Content Include="ico_img\ThongKe.png" />
+    <Content Include="ico_img\timkiem.png" />
+    <Content Include="ico_img\xem chi tiet.png" />
+    <Content Include="ico_img\xoa.png" />
+    <Content Include="ico_img\XoaSanPham.png" />
+    <Content Include="imgSanPham\1.png" />
+    <Content Include="imgSanPham\10.png" />
+    <Content Include="imgSanPham\11.png" />
+    <Content Include="imgSanPham\12.png" />
+    <Content Include="imgSanPham\13.png" />
+    <Content Include="imgSanPham\14.png" />
+    <Content Include="imgSanPham\15.png" />
+    <Content Include="imgSanPham\16.png" />
+    <Content Include="imgSanPham\17.png" />
+    <Content Include="imgSanPham\18.png" />
+    <Content Include="imgSanPham\19.png" />
+    <Content Include="imgSanPham\2.png" />
+    <Content Include="imgSanPham\20.png" />
+    <Content Include="imgSanPham\3.png" />
+    <Content Include="imgSanPham\4.png" />
+    <Content Include="imgSanPham\5.png" />
+    <Content Include="imgSanPham\6.png" />
+    <Content Include="imgSanPham\7.png" />
+    <Content Include="imgSanPham\8.png" />
+    <Content Include="imgSanPham\9.png" />
+    <Content Include="imgSanPham\no_picture.png" />
+    <Content Include="imgSanPham\test.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
